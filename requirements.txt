@@ -2,7 +2,7 @@ streamlit
 numpy
 pandas
 
-google-cloud-bigquery==2.34.4
+gcloud
 
 matplotlib.pyplot
 sklearn.preprocessing
