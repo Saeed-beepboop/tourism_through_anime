@@ -5,6 +5,6 @@ pandas
 gcloud
 
 matplotlib
-sklearn
+scikit-learn
 
 joblib
