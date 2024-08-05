@@ -29,11 +29,15 @@ years = st.slider('For how many years are you planning your anime to run?', 1, 2
 
 submitted = st.button("Submit", key="submit_button")
 if submitted:
-    st.write("Result:")
-    with st.spinner('Calculating...'):
-        prediction_result = process_new_anime(genres, years)
+    if genres != []:
+        st.write("Result:")
+        with st.spinner('Calculating...'):
+            prediction_result = process_new_anime(genres, years)
 
-    genres = ','.join(genres)
-    st.write(f"If a new anime is introduced in the genre of **{genres}**,")
-    st.write(f"and stays on the air for **{years}** year(s),")
-    st.write(f"there is an approximate %{np.round(prediction_result*100)[0]} chance of encouraging foreigners to visit Japan!")
+        genres = ','.join(genres)
+        st.write(f"If a new anime is introduced in the genre of **{genres}**,")
+        st.write(f"and stays on the air for **{years}** year(s),")
+        st.write(f"there is an approximate %{np.round(prediction_result*100)[0]} chance of encouraging foreigners to visit Japan!")
+    else:
+        st.write("Please select a genre.")
+    # st.write(f"{genres}")
