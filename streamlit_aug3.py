@@ -37,7 +37,7 @@ if submitted:
         genres = ','.join(genres)
         st.write(f"If a new anime is introduced in the genre of **{genres}**,")
         st.write(f"and stays on the air for **{years}** year(s),")
-        st.write(f"there is an approximate %{np.round(prediction_result*100)[0]} chance of encouraging foreigners to visit Japan!")
+        st.write(f"there is an approximate **%{np.round(prediction_result*100)[0]}** chance of encouraging foreigners to visit Japan!")
     else:
         st.write("Please select a genre.")
     # st.write(f"{genres}")
