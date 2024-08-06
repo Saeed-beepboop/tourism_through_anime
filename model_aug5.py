@@ -97,7 +97,7 @@ def process_new_anime(user_genres:list, user_years:int):
 #        'Genre', 'Aired_start', 'Aired_end', 'affect_on_jpvisits'], axis=1)
 
 
-    loaded_model = joblib.load("Completed_model_aug5.joblib")
+    loaded_model = joblib.load("Completed_model_aug5_2.joblib")
     # result = loaded_model.score(X_test, y_test)
     # print(result)
 
